@@ -1,0 +1,531 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Start Header */
+:root {
+  --main-color: #f53855;
+  --sub-color: #4f5665;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+/* End Colors */
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("https://use.fontawesome.com/releases/v5.0.6/css/all.css");
+}
+
+/* Start Header */
+.header {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 100px;
+}
+.header .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+.header .container .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header .container .navbar .navbar-brand {
+  font-family: Rubik;
+  font-size: 20px;
+  color: var(--black-color);
+}
+.header .container .navbar .navbar-brand span {
+  font-weight: bold;
+}
+
+.header .container .navbar .nav-item .nav-link {
+  color: var(--sub-color);
+  font-family: Rubik;
+  font-size: 16px;
+  padding-right: 35px;
+}
+.header .container .navbar .nav-item .active {
+  color: var(--main-color);
+}
+.header .container .navbar form button {
+  color: var(--main-color);
+  font-family: Rubik;
+  font-size: 16px;
+  background-color: var(--white-color);
+}
+.header .container .navbar form button:nth-of-type(1) {
+  color: var(--black-color);
+  font-weight: bold;
+  width: 150px;
+  height: 45px;
+}
+.header .container .navbar form button:nth-of-type(2) {
+  border: 1px solid;
+  width: 150px;
+  height: 45px;
+}
+.header .container .navbar form button:nth-of-type(2):hover {
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+#navbarTogglerDemo02 {
+  flex-grow: 0;
+}
+.header .container .row .content .headerTit {
+  font-family: Rubik;
+  font-size: 50px;
+  color: var(--black-color);
+}
+.header .container .row .content .headerTit span {
+  font-weight: bold;
+}
+.header .container .row .content .headerDesc {
+  font-family: Rubik;
+  font-size: 16px;
+  color: var(--sub-color);
+}
+.header .container .row .content .headerDesc span {
+  font-weight: bold;
+}
+.header .container .row .content button {
+  font-family: Rubik;
+  font-size: 12px;
+  color: var(--white-color);
+  background-color: #f53838;
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.header .container .row .pic {
+  float: right;
+  z-index: -1;
+}
+.header .container .row .pic img {
+  width: 612px;
+  height: 383px;
+  padding-top: 30px;
+}
+/* End Header */
+/* Start Offer */
+.offer {
+  margin-bottom: 180px;
+}
+.offer .container {
+  height: auto;
+  background-color: var(--white-color);
+}
+.offer .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black-color);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+.offer .container .row .offerTit {
+  font-family: Rubik;
+  font-size: 25px;
+  text-align: center;
+  width: auto;
+  font-weight: bold;
+}
+.offer .container .row .offerDesc {
+  font-family: Rubik;
+  font-size: 20px;
+  text-align: center;
+  width: auto;
+  color: var(--sub-color);
+}
+.offer .container .row .col-4 .bgImg {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+.offer .container .row .col-4 .bgImg img {
+  width: 17px;
+  height: 18px;
+  /* margin-top: 5px; */
+}
+/* End Offer */
+/* Start Vars */
+.vars {
+  margin-bottom: 100px;
+}
+.vars .container .row {
+  align-items: center;
+}
+.vars .container .row .pic img {
+  width: 508px;
+  height: 414px;
+}
+.vars .container .row .col-md-6 .varsTit {
+  font-family: Rubik;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.vars .container .row .col-md-6 .varsDesc {
+  font-family: Rubik;
+  font-size: 16px;
+}
+.vars .container .row .col-md-6 ul {
+  font-family: Rubik;
+  padding-left: 25px;
+  color: var(--black-color);
+}
+.vars .container .row .col-md-6 ul li {
+  color: var(--sub-color);
+  font-size: 14px;
+  list-style-image: url(../imgs/li.svg);
+  line-height: 30px;
+}
+/* End Vars */
+/* start price */
+.price {
+  background-color: #f5f5f5;
+}
+.price .container .row h2 {
+  font-family: Rubik;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 80px;
+}
+.price .container .row p {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  width: auto;
+  color: var(--sub-color);
+}
+.price .container .row .card {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.price .container .row .card h5 {
+  font-size: 18px;
+}
+.price .container .row .card ul li {
+  font-family: Rubik;
+  color: var(--sub-color);
+  font-size: 14px;
+  list-style-image: url(../imgs/li2.svg);
+  line-height: 30px;
+}
+.price .container .row .card button {
+  width: 178px;
+  height: 45px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: bold;
+}
+.price .container .row .card button:last-child {
+  transition: all 0.3s ease-out;
+}
+.map {
+  background-color: #f5f5f5;
+  /* margin-bottom: 100px; */
+}
+.map .container .tit {
+  font-family: Rubik;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 80px;
+  text-align: center;
+}
+.map .container .disc {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--sub-color);
+  text-align: center;
+}
+.map .container .disc span {
+  font-weight: bold;
+}
+.map .container img {
+  height: 537px;
+  width: 1060px;
+  margin-top: 150px;
+}
+/* Start Adv */
+.adv {
+  margin-bottom: 60px;
+}
+.adv .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adv .container .row .pic img {
+  width: 190px;
+  height: 160px;
+  margin: 36px 0;
+}
+/* End Adv */
+/* start reviews */
+.reviews {
+  margin-bottom: 100px;
+}
+.reviews .container-fluid {
+  background-color: var(--white-color);
+}
+.reviews .container-fluid .tit {
+  font-family: Rubik;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.reviews .container-fluid .dis {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--sub-color);
+  text-align: center;
+}
+.reviews .container-fluid .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  /* margin-left: 100px; */
+}
+.reviews .container-fluid .box .cards {
+  margin-top: 50px;
+}
+.reviews .container-fluid .box .cards .card {
+  border-radius: 10px;
+  width: 400px;
+  height: 230px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.reviews .container-fluid .box .cards .card:hover {
+  border: Solid #f53838 2px;
+}
+.reviews .container-fluid .user-info {
+  display: flex;
+  align-items: center;
+}
+.reviews .container-fluid .user-info__img img {
+  margin-right: 15px;
+  height: 55px;
+  width: 55px;
+  border-radius: 45px;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.reviews .container-fluid .card .text {
+  font-family: Rubik;
+  font-size: 14px;
+  color: #0b132a;
+  word-spacing: 5px;
+}
+.reviews .container-fluid .cards .card .rating {
+  display: flex;
+  align-items: baseline;
+}
+.reviews .container-fluid .cards .card .rating .rate {
+  font-family: Rubik;
+  font-size: 16px;
+}
+.reviews .container-fluid .cards .card .rating img {
+  width: 13px;
+  height: 13px;
+}
+.reviews .container-fluid .controls button {
+  border: 3px sol;
+  border-radius: 50%;
+  color: red;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* end reviews */
+/* start subscribe */
+.subscribe {
+  /* z-index: 10; */
+  width: 80%;
+  height: 233px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 50px;
+}
+.subscribe .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe .container .row .text .tit {
+  font-family: Rubik;
+  font-size: 35px;
+  font-weight: bold;
+}
+.subscribe .container .row .text .dis {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--sub-color);
+}
+.subscribe .container .row form button {
+  font-family: Rubik;
+  font-size: 12px;
+  color: var(--white-color);
+  background-color: #f53838;
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+/* Start Footer */
+.footer {
+  font-family: Rubik;
+  /* height: auto; */
+  /* padding-bottom: 60px; */
+  /* padding-top: 150px; */
+  background-color: #f8f8f8;
+}
+.footer .container .row {
+  padding-top: 60px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+.footer .container .row .first {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.footer .container .row .first .footerTit {
+  font-size: 20px;
+  color: var(--black-color);
+  text-decoration: none;
+}
+.footer .container .row .first .footerDesc {
+  color: #4f5665;
+  font-size: 16px;
+  width: 60%;
+  margin: 25px 0px;
+}
+.footer .container .row .first .footerDesc span {
+  font-weight: bold;
+}
+.footer .container .row .first .copy {
+  float: left;
+  color: var(--sub-color);
+}
+.footer .container .row .first .copy span {
+  font-weight: bold;
+}
+.footer .container .row .first .social {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .container .row .first .social img {
+  color: var(--main-color);
+  width: 40px;
+  height: 40px;
+}
+.footer .container .row .list {
+  padding-top: 30px;
+}
+.footer .container .row .list p {
+  line-height: 42px;
+}
+.footer .container .row ul li {
+  font-size: 14px;
+  color: #4f5665;
+
+  list-style: none;
+  line-height: 30px;
+}
+.footer .container .row1 ul li {
+  display: inline;
+  margin-right: 25px;
+}
+/* End Footer */
+/* start media */
+@media only screen and (max-width: 578px) {
+  .header .container .row .content,
+  .vars .container .row .col-md-6 .varsTit,
+  .vars .container .row .col-md-6 .varsDesc,
+  .divs .container .row .divsItems .item .itemDesc,
+  .cont1 .container .row .text,
+  .cont2 .container .row .text,
+  .footer .container .row .first,
+  .footer .container .row .first .footerDesc {
+    text-align: center;
+  }
+  .header .container .row .content form,
+  .divs .container .row .divsItems .item form,
+  .cont1 .container .row .text form,
+  .cont2 .container .row .text form,
+  .divs2 .container .row .item,
+  .footer .container .row .first form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .container .row .content .headerTit {
+    padding-top: 35px;
+  }
+  .offer .container .row {
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+    align-self: center;
+    margin: 15%;
+  }
+  .offer .container .row .view {
+    padding-top: 30px;
+  }
+  .map .container .disc {
+    padding-bottom: 40px;
+  }
+  .adv .container .row .last {
+    display: flex;
+  }
+
+  .reviews .container-fluid .box {
+    flex-direction: column;
+  }
+  .subscribe .container .row {
+    height: auto;
+    flex-direction: column;
+  }
+  .subscribe .container .row .text .tit,
+  .subscribe .container .row .text .dis,
+  .footer .container .row .first .footerDesc{
+    text-align: center;
+  }
+  .footer{
+    padding-top: 20px;
+  }
+  .footer .container .row .first {
+    align-items: center;
+  }
+}
+/* End media */
